@@ -29,6 +29,12 @@
 				float: right;
 				margin-top: 75px;
 			}
+			/* phone */
+			@media screen and (max-width: 480px) {
+				#myCanvas {
+					width: 100%;
+				}
+			}
 		</style>
 	</head>
 	<body id="body">
@@ -515,7 +521,9 @@
 
 	var myCanvas = document.getElementById("myCanvas");
 	var myTip = document.getElementById("tip");
-	myCanvas.width = 500;
+	if (myCanvas.width > 500) {
+		myCanvas.width = 500;
+	}
 	myCanvas.height = 500;
 
 	var Libros = {
