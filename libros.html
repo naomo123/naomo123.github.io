@@ -1,13 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>My Canvas Demo </title>               
-    <link rel="stylesheet" href="estilo1.css" />
-  </head>
-  <body>
-    
+<head>
+  <title>Los libros más famosos </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="libros.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
-  </body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    #myCanvas {
+        float:left;
+    }
+    legend {
+        font-family:Arial;
+        font-size:25px;
+
+        float:right;
+        margin-top:75px;
+    }
+    
+    </style>
+ 
+
+</head>
+<body id="body">
+
+
+  <div class="container">
+  
+    <div class="card">
+
+       <div class="card-header" style="background-color: rgb(6, 2, 27);">
+        <div class="jumbotron jumbotron-fluid" style="background-color: rgb(6, 2, 27);" 
+        >
+          <div class="container">
+            <h1 class="display-4" style="font-family: 'Cinzel', serif;
+             text-align:center; color: rgb(201, 195, 226); ">Los 6 libros más leídos en el mundo</h1>
+            <p class="lead" style="font-family: 'Cinzel', serif;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Pathway Gothic One', sans-serif; color: rgb(230, 229, 236); ">"El que lee mucho y anda mucho, ve mucho y sabe mucho". Miguel de Cervantes Saavedra, escritor español.</p>
+          </div>
+        </div>
+      </div> 
+
+
+      <div class="card-body">
+        <div class="container" >   
+          <div class="card-group mt-3">
+              <div class="card text-center border-info" style="border: black 3px solid; font-size: 15px; background-color: rgb(220, 234, 248);">
+  
+              <div class="card-body">
+                <img  src="https://lh3.googleusercontent.com/proxy/cFlG5jzaXM2FkPEshhhlkfmjPnSTj3gj6mNfDBXV1s4TF7Ylqs5wz1MQ5p24IhMfuIWK-nyVAhh5LJCr_H0sUG9kD1UbkD-NKdv9mDdY0YFQLSbWJQg"  style="height: 300px;"
+                class="img-thumbnail" alt="Imagen responsive" >
+                <br>
+                <br>
+                <h4 class="card-title" style="font-size: 15px;">1. La Biblia. 3.900 millones de copias</h4>
+                <p class="card-text">La Biblia es el conjunto de libros canónicos del judaísmo y el cristianismo. 
+                  La canonicidad de cada libro varía
+                   dependiendo de la tradición adoptada. Según las religiones judía y cristiana, transmite la palabra de Dios.</p>
+                    </div>
+                         </div>          
+      
+            <div class="card text-center border-info" style="border: black 3px solid; font-size: 15px;">
+              <div class="card-body">
+                <img  src="https://easywayzblog.files.wordpress.com/2016/06/citaspr.gif?w=236"  style="height: 300px;"
+                class="img-thumbnail" alt="Imagen responsive" >
+                <br>
+                <br>
+                <h4 class="card-title"  style="font-size: 15px;">2. Citas del Presidente Mao Tse-Tung (de Mao Tse-Tung). 820 millones de copias.</h4>
+                <p class="card-text">Citas del Presidente Mao, más conocido en Occidente como el Libro Rojo de Mao o el Pequeño Libro Rojo,
+                   es un libro publicado desde abril de 1964 por el gobierno de la República Popular China en el que se recogen citas
+                   y discursos pronunciados por Mao Tse-Tung, que en aquel momento era el presidente del país y del Partido Comunista de China.</p>
+                  </div>
+                     </div>          
+        
+            <div class="card text-center border-info" style="border: black 3px solid; font-size: 15px; background-color: rgb(220, 234, 248);">
+              <div class="card-body">
+                <img  src="https://cuentoalavistablog.files.wordpress.com/2010/11/092c8-harrypotterlibros252b.jpg"  style="height: 300px;"
+                class="img-thumbnail" alt="Imagen responsive" >
+                <br>
+                <br>
+                <h4 class="card-title"  style="font-size: 15px;">3. Harry Potter (de J.K. Rowling). 400 millones de copias.</h4>
+                <p class="card-text">Harry Potter es una heptalogía de novelas fantásticas escrita por la autora 
+                  británica J. K. Rowling, en la que se describen las aventuras del joven aprendiz de mago Harry Potter y 
+                  sus amigos Hermione Granger y Ron Weasley, durante los siete años que pasan en el Colegio Hogwarts de Magia 
+                  y Hechicería. El argumento se centra en la lucha entre Harry Potter
+                   y el malvado mago Lord Voldemort, quien mató a los padres de Harry en su afán de conquistar el mundo mágico.</p>
+                  </div>
+                  </div>          
+        
+
+          </div>
+          </div>
+
+          <div class="container">   
+            <div class="card-group mt-3" >
+                <div class="card text-center border-info" style="border: black 3px solid; font-size: 15px;" >
+                <div class="card-body" >
+                  <img  src="https://easywayzblog.files.wordpress.com/2016/07/sec3b1or-de-los-anillos.jpg?w=1000"  style="height: 300px;"
+                  class="img-thumbnail" alt="Imagen responsive" >
+                  <br>
+                <br>
+                  <h4 class="card-title"  style="font-size: 15px;">4. El Señor de los Anillos (J.R.R. Tolkien). 103 millones de copias.</h4>
+                  <p class="card-text">
+                    El Señor de los Anillos es una novela de fantasía épica escrita por el filólogo y escritor británico J. R. R.
+                     Tolkien. Su historia se desarrolla en la Tercera Edad del Sol de la Tierra Media, un lugar ficticio poblado por
+                      hombres y otras razas antropomorfas como los hobbits, los elfos o los enanos, así como por muchas otras criaturas
+                       reales y fantásticas. La novela narra el viaje del protagonista principal, el hobbit Frodo Bolsón, para destruir
+                        el Anillo Único y la consiguiente guerra que
+                     provocará el enemigo para recuperarlo, ya que es la principal fuente de poder de su creador, el Señor oscuro Sauron.
+
+
+                  </p>
+                      </div>
+                           </div>          
+        
+              <div class="card text-center border-info" style="border: black 3px solid; font-size: 15px; background-color: rgb(220, 234, 248);">
+                <div class="card-body">
+                  <img  src="https://www.elresumen.com/tapas_libros/el_alquimista.jpg"  style="height: 300px;"
+                class="img-thumbnail" alt="Imagen responsive" >
+                <br>
+                <br>
+                  <h4 class="card-title"  style="font-size: 15px;">5. El Alquimista (de Paulo Coelho) 65 millones de copias.</h4>
+                  <p class="card-text">
+                    El alquimista es un libro escrito por el escritor brasileño Paulo Coelho que ha sido traducido a más de 63 lenguas y publicado en 150 países, y que ha vendido un total de 65 millones de copias en todo el mundo.1 El libro trata sobre los sueños y los medios que utilizamos para alcanzarlos, sobre el azar en nuestra vida y las señales que se presentan a lo largo de esta.
+
+                  </p>
+                    </div>
+                       </div>          
+          
+              <div class="card text-center border-info" style="border: black 3px solid; font-size: 15px;">
+                <div class="card-body">
+                  <img  src="data:image/jpeg;base64,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"  style="height: 300px;"
+                  class="img-thumbnail" alt="Imagen responsive" >
+                  <br>
+                <br>
+                  <h4 class="card-title"  style="font-size: 15px;">6. El Código da Vinci (de Dan Brown). 57 millones de copias.</h4>
+                  <p class="card-text">El código Da Vinci es una novela de misterio escrita por Dan Brown. […] Al combinar los géneros de 
+                    suspenso detectivesco y esoterismo Nueva Era, con una teoría de conspiración relativa al Santo Grial y al papel de María 
+                    Magdalena en el cristianismo, la novela espoleó el difundido interés (sobre todo en los Estados Unidos de América) por ciertas teorías de
+                     complots «urdidos en la sombra por poderes ocultos», un fenómeno definido por Brown como el «auge conspiranoico».</p>
+                    </div>
+                    </div>          
+          
+  
+            </div>
+            </div>
+
+ 
+
+<br>        
+            <h1 style="text-align: center; font-size: 30px;"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-graph-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5z"/>
+            </svg> Libros más vendidos a lo largo de los años</h1>
+ 
+            <div>
+                <canvas id="myCanvas"></canvas>
+                <legend for="myCanvas"></legend>
+                <canvas id="tip" width=100 height=25></canvas>
+            </div>
+
+
+
+
+        </div>
+      
+
+
+
+      
+
+
+
+
+      <div class="card-footer">
+
+        <div class="container">
+          <h2 style="color:black">OTROS</h2>  
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border: black 3px solid; font-size: 15px;">
+           
+            <ol class="carousel-indicators" >
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+          
+            <div class="carousel-inner">
+              <div class="item active">
+                  <img src="https://www.uma.es/victoria/jpg/elcorazondelapiedra.jpg"
+                  class="img-responsive center-block " alt="Imagen responsive" >
+              </div>
+        
+              <div class="item">
+                  <img src="https://www.antartica.cl/antartica/gfx_libros/144/9789962904939.jpg"
+                  class="img-responsive center-block img-rounded" alt="Imagen responsive" >
+              </div>
+            
+              <div class="item">
+                  <img src="https://static.openedition.org/covers/OB/cemca/823/823-225x270.jpg"
+                  class="img-responsive  center-block img-rounded " alt="Imagen responsive" >
+              </div>
+              <div class="item">
+                <img src="https://www.elejandria.com/covers/Don_Quijote_de_la_Mancha-Cervantes_Miguel-md.png"
+                class="img-responsive  center-block img-rounded " alt="Imagen responsive" >
+            </div>
+            <div class="item">
+              <img src="https://3.bp.blogspot.com/-TdNaYu7wjoM/Wab2ojou9qI/AAAAAAAAc9w/i4umZVKJqbo_h1fnCRPoJuRBjqNboMEBgCLcBGAs/s1600/orgullo-prejuicio.jpg"
+              class="img-responsive  center-block img-rounded " alt="Imagen responsive" >
+          </div>
+            </div>
+        
+           
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">ANTERIOR</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">SIGUIENTE</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer" style="background-color: rgb(25, 25, 117);">
+    
+    <h5 style="color:black; font-size: 20px;">Copyright ©2020 Naomi Iglesias, Josué Avelar, Ernesto Montesino</h5>
+    </div>
+
+  </div>
+  
+
+    
+      
+      
+      
+</body>
 </html>
-</html>
+<script>
+  /**
+   * Funcion para dibujar una linea
+   * @receive element ctx
+   * @receive integer startX
+   * @receive integer startY
+   * @receive integer endX
+   * @receive integer endY
+   * @receive string color in html format
+   */
+  function drawLine(ctx, startX, startY, endX, endY,color) {
+      ctx.save();
+      ctx.strokeStyle = color;
+      ctx.beginPath();
+      ctx.moveTo(startX,startY);
+      ctx.lineTo(endX,endY);
+      ctx.stroke();
+      ctx.restore();
+  }
+   
+  /**
+   * Funcion para dibujar un rectangulo
+   * @receive element ctx
+   * @receive integer upperLeftCornerX
+   * @receive integer upperLeftCornerY
+   * @receive integer width
+   * @receive integer height
+   * @receive string color in html format
+   */
+  function drawBar(ctx, upperLeftCornerX, upperLeftCornerY, width, height,color) {
+      ctx.save();
+      ctx.fillStyle=color;
+      ctx.fillRect(upperLeftCornerX,upperLeftCornerY,width,height);
+      ctx.restore();
+  }
+   
+  /**
+   * Clase para crear el gráfico de barras
+   * @receive array options
+   *      canvas: objeto canvas
+   *      tip: objeto canvas
+   *      data: array de valores
+   *      name: texto
+   *      colors: array de colores para cada columna
+   */
+  var BarChart = function(options) {
+      this.name = options.name;
+      this.data = options.data
+      this.canvas = options.canvas;
+      this.ctx = this.canvas.getContext("2d");
+      this.tip = options.tip;
+      this.ctxTip = this.tip.getContext("2d");
+      this.colors = options.colors;
+      this.dots=[];
+      that=this;
+   
+      this.draw = function(){
+          var padding=60;
+   
+          var maxValue = Math.max(...Object.values(this.data));
+          var canvasActualHeight = this.canvas.height - padding * 2;
+          var canvasActualWidth = this.canvas.width - padding - 10;
+   
+          var gridScale = Math.round(maxValue/8);
+   
+          // dibujamos el grid
+          var gridValue = 0;
+          while (gridValue <= maxValue){
+              var gridY = canvasActualHeight * (1 - gridValue/maxValue) + padding;
+              drawLine(
+                  this.ctx,
+                  0,
+                  gridY,
+                  this.canvas.width,
+                  gridY,
+                  "#e1e1e1"
+              );
+   
+              // dibujamos los numeros en el grid
+              this.ctx.save();
+              this.ctx.fillStyle = "#808080";
+              this.ctx.textBaseline="bottom";
+              this.ctx.font = "bold 10px Arial";
+              this.ctx.fillText(gridValue, 10,gridY - 2);
+              this.ctx.restore();
+   
+              gridValue+=gridScale;
+          }
+   
+          // dibujamos las barras
+          var barIndex = 0;
+          var numberOfBars = Object.keys(this.data).length;
+          var barSize = ((canvasActualWidth)/numberOfBars);
+   
+          for (categ in this.data){
+              let val = this.data[categ];
+              let barHeight = Math.round( canvasActualHeight * val/maxValue) ;
+              drawBar(
+                  this.ctx,
+                  padding + barIndex * (barSize + 10)  ,
+                  this.canvas.height - barHeight - padding,
+                  barSize,
+                  barHeight,
+                  this.colors[barIndex%this.colors.length]
+              );
+              let x= padding + barIndex * barSize;
+              let y= this.canvas.height - barHeight - padding;
+              this.dots.push({x:x, y:y, w:(x+barSize), h:(y+barHeight)});
+              barIndex++;
+          }
+   
+          // dibujamos el nombre
+          this.ctx.save();
+          this.ctx.textBaseline="bottom";
+          this.ctx.textAlign="center";
+          this.ctx.fillStyle = "#000000";
+          this.ctx.font = "bold 14px Arial";
+          this.ctx.fillText(this.name, this.canvas.width/2,this.canvas.height);
+          this.ctx.restore();
+   
+          // dibujamos el resumen
+          barIndex = 0;
+          var legend = document.querySelector("legend[for='myCanvas']");
+          var ul = document.createElement("ul");
+          legend.append(ul);
+          for (categ in this.data){
+              let li = document.createElement("li");
+              li.style.listStyle = "none";
+              li.style.borderLeft = "20px solid "+this.colors[barIndex%this.colors.length];
+              li.style.padding = "5px";
+              li.textContent = categ+" ("+this.data[categ]+")";
+              ul.append(li);
+              barIndex++;
+          }
+      }
+  }
+   
+  var myCanvas = document.getElementById("myCanvas");
+  var myTip = document.getElementById("tip");
+  myCanvas.width = 500;
+  myCanvas.height = 500;
+   
+  var Libros = {
+      "La Biblia": 3900,
+      "QUOTATIONS FROM CHAIRMAN MAO TSE-TUNG ": 820,
+      "HARRY POTTER": 400,
+      "THE LORD OF THE RINGS": 103,
+      "THE ALCHEMIST":65,
+      "THE DA VINCI CODE": 57,
+  };
+   
+  var myBarChart = new BarChart(
+      {
+          canvas:myCanvas,
+          tip:myTip,
+          data:Libros,
+          name:"",
+          colors:["#a55ca5","#67b6c7","#bccd7a","#eb9743", "#a58787", "#a53939",]
+      }
+  );
+  myBarChart.draw();
+  </script>
