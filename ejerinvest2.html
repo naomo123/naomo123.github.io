@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Búsqueda de Texto con Patrones</title>
+    <style>
+body
+{
+    background: linear-gradient(to right, rgb(127, 255, 244), rgb(26, 45, 95));
+
+}
+        .encontrado {
+            background-color: #ff0;
+        }
+
+        .bg-1{
+
+  
+   height: 5%;
+
+   padding-top: 2px;
+
+}
+
+ 
+
+.t-stroke {
+
+  color: transparent;
+
+  -moz-text-stroke-width: 2px;
+
+  -webkit-text-stroke-width: 2px;
+
+  -moz-text-stroke-color: #000000;
+
+  -webkit-text-stroke-color: #000000;
+  font-size: 50px;
+
+}
+
+ 
+
+.t-shadow {
+
+  text-shadow: 2px 2px #eef3f1;
+  -moz-text-stroke-color: #000000;
+
+
+}
+
+
+.btn-material{text-align: center;}
+
+    </style>
+
+</head>
+
+<body>
+    <form id="frmBuscar" Style="text-align: center;">
+        
+<div class="bg-1">
+
+   <h1 class="t-stroke t-shadow"> BUSCADOR DE PALABRAS</h1>
+
+</div>
+
+      
+       
+        <textarea id="texto" cols="150" rows="10"></textarea>
+      
+ 
+    </form>
+    <div class="btn-material">
+    <p style="font-style: italic; font-weight: bold;">
+        Patrón búsqueda: <input id="patron" type="text" />
+    </p>
+    
+    <button class="btn-material" id="btnBuscar">Buscar y Resaltar</button>
+
+
+<p style="font-style: italic; font-weight: bold;">
+Remplaza la palbra: <input id="remplazo" type="text" />
+</p>
+
+<button class="btn-material" id="btnRemp">Remplazala</button>
+</div>
+<div id="resultado"></div>
+<br>
+<h1 id="h1"></h1>
+<div id="resultado2"></div>
+    
+</body>
+<script>
+    document.getElementById('btnBuscar').onclick = function() {
+        let patron = document.getElementById('patron').value;
+        let re = new RegExp(patron, 'gmsi');
+
+        let texto = document.getElementById('texto').value;
+      
+
+        let resultado = texto.replace(re, '<span class="encontrado">$&</span>');
+
+        document.getElementById('resultado').innerHTML = resultado;
+   document.getElementById('resultado').style.textAlign='justify';
+        
+    }
+
+    document.getElementById('btnRemp').onclick = function() {
+        let patron = document.getElementById('patron').value;
+        let res = new RegExp(patron, 'gmsi');
+
+        let texto = document.getElementById('texto').value;
+      let palabra=document.getElementById('remplazo').value;
+
+        let nuevotexto = texto.replace(res, palabra);
+        let nuevot=nuevotexto.replace(palabra,'<span class="encontrado">$&</span>');
+
+        document.getElementById('resultado2').innerHTML = nuevot;
+   document.getElementById('resultado2').style.textAlign='justify';
+   
+  document.getElementById('h1').innerHTML="NUEVO TEXTO"
+   document.getElementById('resultado2').style.background='linear-gradient(to right, white, gray';
+        
+    }
+ 
+
+</script>
+</html> 
