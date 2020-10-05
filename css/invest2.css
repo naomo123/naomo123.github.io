@@ -1,5 +1,8 @@
 body {
 	background: linear-gradient(to right, rgb(127, 255, 244), rgb(26, 45, 95));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .encontrado {
 	background-color: #ff0;
@@ -31,4 +34,73 @@ body {
 
 .btn-material {
 	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+	.bg-1 {
+		height: auto;
+	}
+	.t-stroke {
+		font-size: 30pt;
+	}
+
+	#texto,
+	input {
+		margin-top: 10px;
+		width: 80%;
+		font-size: 14pt;
+	}
+
+	p {
+		font-size: 16pt;
+	}
+
+	button {
+		font-size: 14pt;
+		width: 80%;
+		padding: 10px 0;
+	}
+
+	#resultado,
+	#resultado2 {
+		margin-top: 20px;
+		font-size: 16pt;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	.bg-1 {
+		height: auto;
+	}
+	.t-stroke {
+		font-size: 40pt;
+	}
+
+	#texto,
+	input {
+		margin-top: 10px;
+		width: 80%;
+		font-size: 20pt;
+		padding: 9px;
+	}
+
+	p {
+		font-size: 30pt;
+	}
+
+	button {
+		font-size: 18pt;
+		width: 40%;
+		padding: 20px 0;
+	}
+
+	#h1 {
+		font-size: 40pt;
+	}
+
+	#resultado,
+	#resultado2 {
+		margin-top: 40px;
+		font-size: 28pt;
+	}
 }
