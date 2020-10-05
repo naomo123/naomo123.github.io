@@ -1,0 +1,34 @@
+body {
+	background: linear-gradient(to right, rgb(127, 255, 244), rgb(26, 45, 95));
+}
+.encontrado {
+	background-color: #ff0;
+}
+
+.bg-1 {
+	height: 5%;
+
+	padding-top: 2px;
+}
+
+.t-stroke {
+	color: transparent;
+
+	-moz-text-stroke-width: 2px;
+
+	-webkit-text-stroke-width: 2px;
+
+	-moz-text-stroke-color: #000000;
+
+	-webkit-text-stroke-color: #000000;
+	font-size: 50px;
+}
+
+.t-shadow {
+	text-shadow: 2px 2px #eef3f1;
+	-moz-text-stroke-color: #000000;
+}
+
+.btn-material {
+	text-align: center;
+}
