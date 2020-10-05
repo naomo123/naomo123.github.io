@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+
 body {
 	background: linear-gradient(to right, rgb(127, 255, 244), rgb(26, 45, 95));
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	font-family: "Open Sans", sans-serif;
 }
 .encontrado {
 	background-color: #ff0;
@@ -34,6 +37,26 @@ body {
 
 .btn-material {
 	text-align: center;
+	padding: 10px 20px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+#texto,
+input {
+	width: 80%;
+	font-size: 12pt;
+}
+
+p {
+	font-size: 16pt;
+}
+
+#resultado,
+#resultado2 {
+	margin-top: 20px;
+	font-size: 16pt;
 }
 
 @media screen and (max-width: 480px) {
@@ -68,12 +91,15 @@ body {
 	}
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
 	.bg-1 {
 		height: auto;
 	}
 	.t-stroke {
-		font-size: 40pt;
+		font-size: 50pt;
+		-moz-text-stroke-width: 4px;
+
+		-webkit-text-stroke-width: 4px;
 	}
 
 	#texto,
@@ -88,10 +114,13 @@ body {
 		font-size: 30pt;
 	}
 
+	.btn-material {
+		font-size: 20pt;
+		padding: 10px 20px;
+	}
+
 	button {
-		font-size: 18pt;
 		width: 40%;
-		padding: 20px 0;
 	}
 
 	#h1 {
